@@ -4,6 +4,9 @@ This is a development build of the ARA Library 2.1.
 
 ARA SDK 2.1 draft 1 (aka 2.0.1) (2021/??/??)
 - initial draft of ARA audio file chunk authoring directly in the host
+- implementation of assertion macros changed to be consistent void expressions
+  Code like "if (ARA_some_assert (someCall ()))" breaks when disabling asserts,
+  so this change makes it impossible to write it.
 
 
 === ARA SDK 2.0 release (aka 2.0.001) (2021/05/03) ===
